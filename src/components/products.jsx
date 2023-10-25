@@ -11,7 +11,7 @@ function ProductsCard(props) {
             </a>
         </div>
     );
-}
+} 
 
 function createCards(productList) {
     return (
