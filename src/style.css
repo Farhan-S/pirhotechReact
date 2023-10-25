@@ -1,0 +1,111 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-mid
+{
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.company-logo img{
+  width: 100px;
+}
+.company-logo
+{
+  width: 40%;
+}
+.menu
+{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.menu ul
+{
+  list-style: none;
+  display: flex;
+
+}
+.menu ul li
+{
+  
+  position: relative;
+}
+.menu ul li a
+{
+  display: inline-block;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffff;
+}
+.menu ul li a.active
+{
+  color: red;
+}
+.menu ul li ul
+{
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  border: 1px solid #fff;
+}
+.menu ul li:hover ul
+{
+  display: block;
+}
+.menu ul li:hover span
+{
+  color: #15e0ee;
+  font-size: 20px;
+  transition: .4s;
+}
+.headerDesMid .comName
+{
+  font-size: 4rem;
+  user-select: none;
+}
+.headerDesMid
+{
+  text-align: center;
+  margin-top: 10%;
+}
+.headerDesMid h1
+{
+  font-size: 2.5rem;
+  user-select: none;
+  color: #fff;
+}
+.headerDesMid p
+{
+  font-size: 1.5rem;
+  color: #fff;
+}
+.headerDes
+{
+  height: 500px;
+}
+
+
+

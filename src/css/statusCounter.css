@@ -1,0 +1,146 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+:root {
+    --color1: #ffffff;
+    --color2: #c8c8c8;
+ 
+
+}
+
+/* body{
+   background-color:#212121
+
+} */
+
+.sCounterMainMid
+{
+    width: 80%;
+    margin: auto;
+}
+
+
+.counter {
+    color: var(--color1);
+    background: linear-gradient(to right, var(--color1) 49%, transparent 50%);
+    font-family: 'Figtree', sans-serif;
+    text-align: center;
+    width: 210px;
+    padding: 110px 10px 35px 30px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+
+}
+
+.linear{
+    display: flex;
+    justify-content: space-between; 
+}
+.row{
+    margin: auto;
+}
+.top{
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.top p{
+    color: #a8a8a8;
+    margin-top: 40px;
+}
+
+.top a{
+    position: relative;
+    display: inline-flex;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: auto;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.top a:hover{
+    background-color: #ffffff;
+    color: #212121;
+    transition: 0.3s cubic-bezier(0.55, 0.06, 0.68, 0.19)ease-in-out;
+}
+
+.top h1{
+    color: #ffffff;
+    display: inline;
+    font-size: 4em;
+    font-family: 'Figtree', sans-serif;
+}
+.terminal-icon{
+ font-size: 4em;
+ display: inline;
+}
+
+
+.counter:before,
+.counter:after {
+    content: "";
+    background: transparent;
+    border: 10px solid transparent;
+    border-bottom-color: var(--color2);
+    border-left-color: var(--color2);
+    box-shadow: -6px 6px 8px rgba(171, 171, 171, 0.2);
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    bottom: 10px;
+    right: 0;
+    z-index: -1;
+}
+
+.counter:after {
+    background: #424242;
+    border: none;
+    box-shadow: 6px 6px 8px rgba(173, 173, 173, 0.4);
+    top: 20px;
+    left: 22px;
+    bottom: 20px;
+}
+
+.counter .counter-icon {
+    background: #424242;
+    font-size: 30px;
+    line-height: 55px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 0 8px var(--color1);
+    position: absolute;
+    top: 35px;
+    right: 15px;
+}
+
+.counter h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    text-transform: capitalize;
+}
+
+.counter .counter-value {
+    font-size: 2.4em;
+    font-weight: 600;
+   
+}
+
+
+
+.plus{
+    font-size: 2.4em;
+}
+
+@media screen and (max-width:1990px) {
+    .counter {
+        margin-bottom: 40px;
+    }
+}
