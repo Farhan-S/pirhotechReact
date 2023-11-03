@@ -19,7 +19,7 @@ function ParticleBG()
         options={{
             background: {
                 color: {
-                    value: "#212121",
+                    value: "#111111",
                 },
             },
             fullScreen: {

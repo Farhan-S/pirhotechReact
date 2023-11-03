@@ -19,8 +19,8 @@ code {
 
 .nav-mid
 {
-  width: 80%;
-  margin: auto;
+  width: 85%;
+  margin:10px auto;
   display: flex;
 }
 .company-logo img{
@@ -28,11 +28,11 @@ code {
 }
 .company-logo
 {
-  width: 40%;
+  width: 30%;
 }
 .menu
 {
-  width: 60%;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: right;
@@ -60,7 +60,7 @@ code {
 {
   color: red;
 }
-.menu ul li ul
+.menu ul li .subMenu
 {
   display: none;
   position: absolute;
@@ -68,7 +68,6 @@ code {
   left: 0;
   right: 0;
   text-align: center;
-
   border: 1px solid #fff;
 }
 .menu ul li:hover ul
@@ -81,6 +80,65 @@ code {
   font-size: 20px;
   transition: .4s;
 }
+.profileBtn
+{
+  margin-left: 30px;
+}
+.userButton
+{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+.userButton img
+{
+  height: 100%;
+  width: 100%;
+}
+.userButton:hover
+{
+  transform: translateY(2px);
+  transition: .3s;
+}
+
+.userDropMenu
+{
+  display: flex;
+  flex-direction: column;
+  display: none;
+  position: absolute;
+  top: 52px;
+  left: -150px;
+  right: 0;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 0px !important;
+  z-index: 2;
+  background-color: #111;
+}
+
+
+.userDropMenu li a
+{
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+.userDropMenu li a:hover
+{
+  background-color: rgba(136, 133, 133, 0.2);
+  
+}
+.myProject
+{
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+
+/* header section */
 .headerDesMid .comName
 {
   font-size: 4rem;

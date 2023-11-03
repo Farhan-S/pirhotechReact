@@ -3,7 +3,7 @@ const productList=[
         id:1,
         name:"Brain Adorn",
         imgUrl:require("../images/brainAdornLogo.png"),
-        appLink:""
+        appLink:"https://play.google.com/store/apps/details?id=com.pirhotech.brainadorn"
     },
     {
         id:2,

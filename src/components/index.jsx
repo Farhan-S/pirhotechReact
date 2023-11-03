@@ -23,14 +23,18 @@ function Index() {
                     <p>A Bit of Spark</p>
                     <h1>We provide you {" "}
                         <span>{text}</span>
-                        <Cursor cursorColor='red' />
+                        <Cursor 
+                        cursorColor='red' 
+                        cursorStyle='>_'
+                        />
                         Services
                     </h1>
                 </div>
             </div>
             <OurServices />
-            <StatusCounter />
             <Products />
+            <StatusCounter />
+            
 
             
         </div>
