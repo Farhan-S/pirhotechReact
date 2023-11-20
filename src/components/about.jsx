@@ -1,6 +1,6 @@
 import React from "react";
 import ParticleBG from "./particleBG";
-import ProjectManage from "./projectManage";
+import OurProjects from "./ourProjects";
 
 function About()
 {
@@ -8,7 +8,7 @@ function About()
         <div className="about">
             <ParticleBG />
             <h1>This is about page</h1>
-            <ProjectManage />
+            <OurProjects />
         </div>
         
     );

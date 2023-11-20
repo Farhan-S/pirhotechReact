@@ -112,7 +112,7 @@ button, a {
   color: var(--light-font);
   box-shadow: 0 2px 6px 0 rgba(136, 148, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
   overflow: hidden;
-  margin-left: 50px;
+  margin-right: 70px;
 }
 .dark .search-wrapper {
   box-shadow: none;

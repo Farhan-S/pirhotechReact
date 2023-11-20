@@ -1,0 +1,12 @@
+/* HoverCard.css */
+.card {
+    border: 1px solid red;
+    width: 300px;
+  }
+  
+  .hovered {
+    transform: translateZ(12px);
+  }
+  
+
+  
