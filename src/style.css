@@ -146,8 +146,11 @@ code {
 }
 .headerDesMid
 {
-  text-align: center;
-  margin-top: 10%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
 }
 .headerDesMid h1
 {
@@ -159,11 +162,45 @@ code {
 {
   font-size: 1.5rem;
   color: #fff;
+  margin-bottom: 30px;
 }
 .headerDes
 {
   height: 500px;
 }
+.headerText
+{
+  width: 26%;
+}
+.curly-brace {
+  position: relative;
+  width: 20px; /* Adjust width as needed */
+  height: 450px; /* Adjust height as needed */
+  border-left: 2px solid rgb(247, 240, 240); /* Adjust border width and color */
+  margin-right: 50px;
+}
+
+.curly-brace::before,
+.curly-brace::after {
+  content: '';
+  position: absolute;
+  width: 10px; /* Adjust size of the curly parts */
+  height: 10px; /* Adjust size of the curly parts */
+  border: 2px solid rgb(244, 237, 237); /* Adjust border width and color */
+  border-radius: 30%;
+  transform: rotate(-45deg);
+}
+
+.curly-brace::before {
+  top: -5px;
+  left: 0;
+}
+
+.curly-brace::after {
+  bottom: -5px;
+  left: 0;
+}
+
 
 
 
