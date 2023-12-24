@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import VanillaTilt from 'vanilla-tilt';
 import productList from "../js/productsList";
 import "../css/productsCard.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,9 +7,34 @@ import { faXmark, faDownload } from '@fortawesome/free-solid-svg-icons';
 
 function ProductsCard(props) {
     const [showPopup, setShowPopup] = useState(false);
+    //tilt effect start
+    const cardRef = useRef(null);
+
+    useEffect(() => {
+        let currentRef = cardRef.current;
+
+        if (currentRef) {
+            const vanillaTiltInstance = VanillaTilt.init(currentRef, {
+                max: 25,
+                speed: 400,
+                glare: true,
+                'max-glare': 0.5,
+            });
+
+            return () => {
+                if (vanillaTiltInstance) {
+                    vanillaTiltInstance.destroy();
+                }
+            };
+        }
+    }, []);
+    //tilt effect end
+
     return (
         <div className="productItem col-md-3">
+            <div ref={cardRef} className="productTiltBox">
             <a
+                
                 href="/"
                 onClick={(e) => {
                     e.preventDefault();
@@ -18,6 +44,7 @@ function ProductsCard(props) {
                 <img src={props.imgUrl} alt="appLogo" />
                 <h3>{props.name}</h3>
             </a>
+            </div>
             {showPopup && <Popup appLink={props.appLink} name={props.name} onClose={() => setShowPopup(false)} />}
         </div>
     );
@@ -34,11 +61,11 @@ function createCards(productList) {
     );
 }
 
-function Popup({ onClose, name,appLink }) {
+function Popup({ onClose, name, appLink }) {
 
     const handleDownload = (link) => {
         window.location.href = link;
-      };
+    };
 
     return (
         <div className="popup">

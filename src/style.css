@@ -19,7 +19,7 @@ code {
 
 .nav-mid
 {
-  width: 85%;
+  width: 90%;
   margin:10px auto;
   display: flex;
 }
@@ -28,11 +28,11 @@ code {
 }
 .company-logo
 {
-  width: 30%;
+  width: 10%;
 }
 .menu
 {
-  width: 70%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: right;
@@ -41,6 +41,7 @@ code {
 {
   list-style: none;
   display: flex;
+  align-items: center;
 
 }
 .menu ul li
@@ -116,7 +117,7 @@ code {
   text-align: center;
   border: 1px solid #fff;
   padding: 0px !important;
-  z-index: 2;
+  z-index: 99;
   background-color: #111;
 }
 
@@ -164,13 +165,17 @@ code {
   color: #fff;
   margin-bottom: 30px;
 }
+
+.typewriterText{
+  color: #40bd00;
+}
 .headerDes
 {
   height: 500px;
 }
 .headerText
 {
-  width: 26%;
+  width: 30%;
 }
 .curly-brace {
   position: relative;
@@ -199,6 +204,146 @@ code {
 .curly-brace::after {
   bottom: -5px;
   left: 0;
+}
+
+
+.navbarToggler
+{
+  display: none;
+  font-size: 30px;
+}
+.mblMenuCross
+{
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+.userBtn
+{
+  font-size: 30px !important;
+}
+
+/* resoponsive code for navbar */
+
+@media screen and (max-width: 960px) {
+
+  .menu ul li a
+  {
+    padding: 5px 15px;
+  }
+}
+
+@media screen and (max-width: 810px)
+{
+  .navbarToggler
+  {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+  }
+  .menu
+  {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    background-color: #0e0e0e;
+    z-index: 11;
+    display: none;
+  }
+  .menu ul
+  {
+    display: block;
+    margin-top: 90px;
+  }
+  .menu ul li a
+  {
+    width: 100%;
+    padding: 25px 50px;
+  }
+  .nav-mid
+  {
+    justify-content: space-between;
+  }
+  .mblMenuCross
+  {
+    display: block;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+    padding: 10px;
+  }
+  .profileBtn
+  {
+    position: absolute !important;
+    top: 10px;
+    right: 10px;
+  }
+  .mainMenu
+  {
+    width: 100%;
+    padding: 0;
+  }
+  .comName
+  {
+    font-size: 3.5rem !important;
+  }
+  .headerText p
+  {
+    font-size: 1.2rem;
+  }
+  .userDropMenu
+  {
+    margin-top: 0 !important;
+  }
+  .userBtn
+  {
+    padding: 5px !important;
+  }
+  
+}
+
+
+@media screen and (max-width: 550px)
+{
+  .menu
+  {
+    width: 60%;
+  }
+  .comName
+  {
+    font-size: 2.7rem !important;
+    margin-bottom: 20px;
+  }
+  .headerImage
+  {
+    display: none;
+  }
+  .headerText
+  {
+    width: 90%;
+  }
+  .headerText h1
+  {
+    font-size: 1.6rem;
+  }
+  .curly-brace
+  {
+    margin-left: 25px;
+    margin-right: 10px;
+  }
+  .userDropMenu
+  {
+    margin-top: 0 !important;
+  }
+  .company-logo img
+  {
+    max-width: 150%;
+  }
 }
 
 

@@ -1,0 +1,14 @@
+.boxxx
+{
+    width: 300px;
+    height: 400px;
+    margin: 10px auto;
+    text-align: center;
+    background-color: aliceblue;
+
+    
+}
+.boxxx *
+{
+    color: black;
+}

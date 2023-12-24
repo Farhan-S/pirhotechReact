@@ -10,7 +10,7 @@ function OurServices() {
   return (
     <div className="serviceMain">
       <h1>Our Services</h1>
-      <section className="container">
+      <section className="container serContainer">
         <section className="card__container">
           <div className="card__bx">
             <div className="card__data">

@@ -1,16 +1,16 @@
 import React from "react";
 import ParticleBG from "./particleBG";
-import OurProjects from "./ourProjects";
+import Team from "./team";
+import Footer from "./footer";
 
-function About()
-{
-    return(
+function About() {
+    return (
         <div className="about">
             <ParticleBG />
-            <h1>This is about page</h1>
-            <OurProjects />
+            <Team />
+            <Footer />
         </div>
-        
+
     );
 }
 

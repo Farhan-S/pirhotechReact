@@ -5,7 +5,7 @@ import OurServices from "./ourServices";
 import StatusCounter from "./statusCounter";
 import Products from "./products";
 import headerImage from "../images/headerIgame.png";
-
+import Footer from "./footer";
 
 
 function Index() {
@@ -28,7 +28,7 @@ function Index() {
                         <h1>We provide you {" "}
                         </h1>
                         <h1>
-                            <span>{text}</span>
+                            <span  className="typewriterText">{text}</span>
                             <Cursor
                                 cursorColor='red'
                                 cursorStyle='>_'
@@ -46,6 +46,7 @@ function Index() {
             <OurServices />
             <Products />
             <StatusCounter />
+            <Footer />
 
 
 
